@@ -1,0 +1,20 @@
+Log file created at: 2018/11/25 22:40:13
+Running on machine: Mervyn
+Binary: Built with gc go1.11.2 for darwin/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I1125 22:40:13.034401   44302 wechat.go:14] [*] wechat init.
+I1125 22:40:18.420456   44302 get_uuid.go:39] [*] get uuid success4cFyw_FEgw==
+I1125 22:40:18.420674   44302 start.go:9] [*] wechat start...
+I1125 22:40:22.552177   44302 get_uuid.go:39] [*] get uuid successoZc5xhm4-A==
+I1125 22:40:27.183105   44302 check_login.go:34] [*] scan code success.
+I1125 22:40:28.309791   44302 check_login.go:38] [*] login success, wait to redirect.
+I1125 22:40:28.310121   44302 conf.go:40] [*] Host is：wx.qq.com
+I1125 22:40:29.261733   44302 polling.go:61] [*] sync check success, selector：2
+I1125 22:40:29.422378   44302 handle_sync.go:27] sync ok.
+I1125 22:40:29.971372   44302 polling.go:61] [*] sync check success, selector：2
+I1125 22:40:30.096525   44302 handle_sync.go:27] sync ok.
+I1125 22:40:49.175197   44302 polling.go:61] [*] sync check success, selector：2
+I1125 22:40:49.416818   44302 handle_sync.go:24] [好友消息] Mervyn: echo
+I1125 22:41:14.758203   44302 polling.go:61] [*] sync check success, selector：0
+I1125 22:41:40.064306   44302 polling.go:61] [*] sync check success, selector：0
+I1125 22:42:11.851195   44302 polling.go:61] [*] sync check success, selector：0
