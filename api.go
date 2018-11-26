@@ -8,9 +8,10 @@ type SendMsg struct {
 
 // API 对外暴露出去的 api
 type API struct {
-	User    User         // user info
-	MsgChan chan Message // 新信息信道
-	sendMsg chan SendMsg
+	User        User         // user info
+	MsgChan     chan Message // 新信息信道
+	sendMsg     chan SendMsg
+	sendEmotion chan SendMsg
 }
 
 // SendMessage 发送消息

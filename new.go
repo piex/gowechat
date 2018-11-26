@@ -11,8 +11,9 @@ import (
 )
 
 var wechatAPI = &API{
-	MsgChan: make(chan Message),
-	sendMsg: make(chan SendMsg),
+	MsgChan:     make(chan Message),
+	sendMsg:     make(chan SendMsg),
+	sendEmotion: make(chan SendMsg),
 }
 
 // New 初始化 WeChat
