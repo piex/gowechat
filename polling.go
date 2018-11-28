@@ -60,6 +60,10 @@ func (w *WeChat) syncPolling() error {
 
 	glog.Info("[*] sync check success, selector：", selector)
 
+	// selector:
+	//       a. 0 正常
+	//       b. 2 新的消息
+	//       c. 7 手机操作了微信
 	if selector != 0 {
 		msg, err := w.sync()
 		if err != nil {

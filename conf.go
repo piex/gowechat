@@ -7,6 +7,45 @@ import (
 	"github.com/golang/glog"
 )
 
+const (
+	// MsgTypeTEXT 文本消息
+	MsgTypeTEXT = 1
+	// MsgTypeIMAGE 图片消息
+	MsgTypeIMAGE = 3
+	// MsgTypeVOICE 语音消息
+	MsgTypeVOICE = 34
+	// MsgTypeVERIFYMSG TODO
+	MsgTypeVERIFYMSG = 37
+	// MsgTypePOSSIBLEFRIENDMSG 添加好友
+	MsgTypePOSSIBLEFRIENDMSG = 40
+	// MsgTypeSHARECARD 共享名片
+	MsgTypeSHARECARD = 42
+	// MsgTypeVIDEO 视频通话消息
+	MsgTypeVIDEO = 43
+	// MsgTypeEMOTICON emoji 表情
+	MsgTypeEMOTICON = 47
+	// MsgTypeLOCATION 位置消息
+	MsgTypeLOCATION = 48
+	// MsgTypeAPP 分享链接
+	MsgTypeAPP = 49
+	// MsgTypeVOIPMSG VOIPMSG
+	MsgTypeVOIPMSG = 50
+	// MsgTypeSTATUSNOTIFY 微信初始化消息
+	MsgTypeSTATUSNOTIFY = 51
+	// MsgTypeVOIPNOTIFY VOIPNOTIFY
+	MsgTypeVOIPNOTIFY = 52
+	// MsgTypeVOIPINVITE VOIPINVITE
+	MsgTypeVOIPINVITE = 53
+	// MsgTypeMICROVIDEO 小视频
+	MsgTypeMICROVIDEO = 62
+	// MsgTypeSYSNOTICE SYSNOTICE
+	MsgTypeSYSNOTICE = 9999
+	// MsgTypeSYS 系统消息
+	MsgTypeSYS = 10000
+	// MsgTypeRECALLED 撤回消息
+	MsgTypeRECALLED = 10002
+)
+
 var (
 	userAgent          = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
 	host               = "wx.qq.com"                                                                       // 微信主域名

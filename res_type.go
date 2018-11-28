@@ -28,7 +28,7 @@ type InitResult struct {
 
 // BaseResponse 基础返回参数
 type BaseResponse struct {
-	Ret    int    `json:"Ret"`
+	Ret    int    `json:"Ret"` // 表示请求返回状态码，0表示成功
 	ErrMsg string `json:"ErrMsg"`
 }
 
@@ -151,8 +151,8 @@ type Contacts struct {
 // Message 消息
 type Message struct {
 	BaseResponse           BaseResponse  `json:"BaseResponse"`
-	AddMsgCount            int           `json:"AddMsgCount"`
-	AddMsgList             []AddMsg      `json:"AddMsgList"`
+	AddMsgCount            int           `json:"AddMsgCount"` // AddMsgCount 新消息个数
+	AddMsgList             []AddMsg      `json:"AddMsgList"`  // AddMsgList 新消息列表
 	ModContactCount        int           `json:"ModContactCount"`
 	ModContactList         []Contact     `json:"ModContactList"`
 	DelContactCount        int           `json:"DelContactCount"`

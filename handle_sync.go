@@ -16,7 +16,7 @@ func (w *WeChat) handleSync(msg *Message) error {
 		m.Content = strings.Replace(m.Content, "&gt;", ">", -1)
 
 		switch m.MsgType {
-		case 1:
+		case MsgTypeTEXT:
 			if m.FromUserName[:2] == "@@" { // 群消息
 				glog.Infof("[群消息] %s: %s", w.getNickName(m.FromUserName), m.Content)
 			} else {
